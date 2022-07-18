@@ -1,0 +1,205 @@
+/* font-family: 'Nova Mono', monospace; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+i {
+    margin-top: 1rem;
+    font-family: 'Nova Mono';
+    color: #f3b43a;
+    font-weight: lighter;
+    font-size: 26px;
+}
+
+.background-img {
+    background-image: url("Banner-without-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 92vh;
+}
+.bg-color {
+    background-color: black;
+    opacity: .88;
+    min-height: 92vh;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.d-flex i {
+    margin-right: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+.d-flex i:hover{
+    transform: scale(1.9, 1.9);
+}
+
+.font-style {
+    font-size: 13px;
+    border-bottom: 1px solid #f3b43a;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+/* header end here  */
+
+.main {
+    width: 86%;
+    font-family: 'Nova Mono';
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.info {
+    color: white;
+    font-family: 'Nova Mono';
+    width: 80%;
+}
+.info p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+.anchor-tag {
+    margin-top: 150px;
+}
+.social-icons .d-flex, .align-flex-start {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.social-icons a {
+    color: #f3b43a;
+    font-size: 22px;
+}
+.social-icons i {
+    font-size: 26px;
+    color: white;
+}
+
+.contact-us {
+    clear: both;
+    width: 100%;
+}
+.mt-20:first-child{
+    margin-top: 0;
+}
+.mt-20{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 10px;
+}
+input, textarea{
+    width: 96%;
+}
+label{
+    margin-bottom: 10px;
+}
+.w-48 label{
+    line-height: 3;
+}
+.btn {
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+}
+.btn button{
+    padding: 25px 30px;
+    background-color: transparent;
+    border: #f3b43a solid;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    transition: all .4s ease-in-out;
+}
+.btn button:hover{
+    background-color: white;
+    color: black;
+    border: solid white;
+}
+footer{
+    color: #f3b43a;
+    font-family: 'Nova Mono';
+    padding: 20px 50px;
+    background-color: black;
+}
+
+@media screen and (max-width : 768px){
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+    .info {
+        margin-top: 30px;
+    }
+    .social-icons i {
+        margin-bottom: 50px;
+    }
+    .anchor-tag{
+        margin: 0;
+    }
+}
+@media screen and (min-width : 425px){
+    .toggle-btn {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 425px){
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        right: 0rem;
+        padding: 4px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      
+      .closeIcon {
+        display: none;
+      }
+      
+      .menu {
+        position: fixed;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-top: 4rem;
+      }
+      
+      .showMenu {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 600px){
+    .hamburger{
+        display: none;
+        outline: none;
+        border: none;
+    }
+}
